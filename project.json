@@ -1,0 +1,106 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Sleeping Moon is a relaxing animated wallpaper, with pleasant music composition. You can easily change all the color scheme to your taste. Stars positions set randomly every time you choose this wallpaper. \r\n\r\nAudio composition used in this work: \"Going down\" by \"Dark Life Note\".\r\n\r\nThis is the first version and there may still be some minor bugs. Feel free to share your impressions and ideas in comments!",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"backgroundbottomgradientcolor" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "Background Bottom Gradient Color",
+				"type" : "color",
+				"value" : "0.592156862745098 0.5411764705882353 1"
+			},
+			"backgroundtopgradientcolor" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "Background Top Gradient Color",
+				"type" : "color",
+				"value" : "0.06274509803921569 0.14901960784313725 0.4588235294117647"
+			},
+			"mooncolor" : 
+			{
+				"index" : 3,
+				"order" : 103,
+				"text" : "Moon Color",
+				"type" : "color",
+				"value" : "0.4980392156862745 0.8274509803921568 0.8"
+			},
+			"mooneye" : 
+			{
+				"index" : 4,
+				"order" : 104,
+				"text" : "Moon Eye Color",
+				"type" : "color",
+				"value" : "0.18823529411764706 0.3176470588235294 0.2980392156862745"
+			},
+			"mooninsideholes" : 
+			{
+				"index" : 5,
+				"order" : 105,
+				"text" : "Moon Inside Holes",
+				"type" : "color",
+				"value" : "0.3215686274509804 0.5372549019607843 0.5137254901960784"
+			},
+			"moonoutsideholes" : 
+			{
+				"index" : 6,
+				"order" : 106,
+				"text" : "Moon Outside Holes",
+				"type" : "color",
+				"value" : "0.3215686274509804 0.5372549019607843 0.5137254901960784"
+			},
+			"musicvolume" : 
+			{
+				"fraction" : false,
+				"index" : 7,
+				"max" : 100,
+				"min" : 0,
+				"order" : 107,
+				"text" : "Music volume",
+				"type" : "slider",
+				"value" : 50
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.4627450980392157 0 0.5725490196078431"
+			},
+			"starblinkspeed" : 
+			{
+				"fraction" : true,
+				"index" : 8,
+				"max" : 1000,
+				"min" : 100,
+				"order" : 108,
+				"precision" : 1,
+				"step" : 1,
+				"text" : "Star Blink Speed",
+				"type" : "slider",
+				"value" : 300
+			},
+			"starscolor" : 
+			{
+				"index" : 2,
+				"order" : 102,
+				"text" : "Stars Color",
+				"type" : "color",
+				"value" : "0.8 0.8 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Relaxing" ],
+	"title" : "Sleeping Moon",
+	"type" : "web",
+	"version" : 1,
+	"visibility" : "public",
+	"workshopid" : "2341955408",
+	"workshopurl" : "steam://url/CommunityFilePage/2341955408"
+}
