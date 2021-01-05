@@ -119,24 +119,15 @@
 
                     document.querySelector(".cls-2").style.fill = `rgb(${customColor})`;
                 }
-                if (properties.mooninsideholes) {
+                if (properties.moonholes) {
                     // Convert the custom color to 0 - 255 range for CSS usage
-                    let customColor = makeRGBFromWPEFormat(properties.mooninsideholes);
+                    let customColor = makeRGBFromWPEFormat(properties.moonholes);
 					
 					let insideHoles = document.getElementsByClassName("cls-3");
 					
 					for (let item of insideHoles) {
 						item.style.fill = `rgb(${customColor})`;
-					}
-                }
-                if (properties.moonoutsideholes) {
-                    // Convert the custom color to 0 - 255 range for CSS usage
-                    let customColor = makeRGBFromWPEFormat(properties.moonoutsideholes);
-
-                    let outsideHoles = document.getElementsByClassName("cls-4");
-					
-					for (let item of outsideHoles) {
-						item.style.stroke = `rgb(${customColor})`;
+                        item.style.stroke = `rgb(${customColor})`;
 					}
                 }
                 if (properties.starscolor) {
