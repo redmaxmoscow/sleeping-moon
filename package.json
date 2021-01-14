@@ -1,0 +1,19 @@
+{
+  "name": "sleeping-moon",
+  "version": "1.0.0",
+  "description": "Live wallpaper with animation & sound",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redmaxmoscow/sleeping-moon.git"
+  },
+  "author": "redmaxmsk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redmaxmoscow/sleeping-moon/issues"
+  },
+  "homepage": "https://github.com/redmaxmoscow/sleeping-moon#readme"
+}
