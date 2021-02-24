@@ -1,0 +1,116 @@
+- let emptyLine = '\n';
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1")
+        title="Sleeping Moon Wallpaper"
+        style(type="text/css").
+            * {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            body {
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .star {
+                position: absolute;
+                transition: .1s;
+                z-index: 1;
+            }
+
+            .star-small {
+                width: 30px;
+                height: 30px;
+            }
+
+            .star-middle {
+                width: 60px;
+                height: 60px;
+            }
+
+            .star-big {
+                width: 90px;
+                height: 90px;
+            }
+
+            .moon {
+                width: 256px;
+                height: 256px;
+
+                position: absolute;
+                top: 35%;
+                left: 45%;
+            }
+
+            .cloud {
+                position: absolute;
+                width: 256px;
+                height: 256px;
+                fill: #ffffff;
+                z-index: 10;
+            }
+
+            .zoom {
+                transform: scale(2);
+            }
+        script(type="text/javascript" src="assets/javascript/wpe-service.js")
+        script(type="text/javascript" src="assets/javascript/main.js")
+    body
+        section.sky-objects
+            - for (let i = 0; i < 18; i++)
+                svg(class="star star-small" data-name="star-layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.2 1024")
+                    polygon(class="cls-1" points="512.1 0 670.35 337.08 1024.2 391.13 768.15 653.51 828.6 1024 512.1 849.08 195.6 1024 256.05 653.51 0 391.13 353.85 337.08 512.1 0")
+            =emptyLine
+            - for (let i = 0; i < 6; i++)
+                svg(class="star star-middle" data-name="star-layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.2 1024")
+                    polygon(class="cls-1" points="512.1 0 670.35 337.08 1024.2 391.13 768.15 653.51 828.6 1024 512.1 849.08 195.6 1024 256.05 653.51 0 391.13 353.85 337.08 512.1 0")
+            =emptyLine
+            - for (let i = 0; i < 3; i++)
+                svg(class="star star-big" data-name="star-layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.2 1024")
+                    polygon(class="cls-1" points="512.1 0 670.35 337.08 1024.2 391.13 768.15 653.51 828.6 1024 512.1 849.08 195.6 1024 256.05 653.51 0 391.13 353.85 337.08 512.1 0")
+            =emptyLine
+            svg(class="moon" data-name="moon-layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 668 771")
+                defs
+                    style(type="text/css").
+                        .cls-4{fill:none;stroke-miterlimit:10;}
+                title="moon-element"
+                path(class="cls-1" d="M469.45,485c0-146.39,111.92-275.59,282.59-352.78A632.14,632.14,0,0,0,671.22,127C398.82,127,178,299.59,178,512.5S398.82,898,671.22,898A615.59,615.59,0,0,0,846,873.06C623.6,804.92,469.45,656.78,469.45,485Z" transform="translate(-178 -127)")
+                path(class="cls-2" d="M388,458a47.47,47.47,0,0,0,15.44,12.86A38.87,38.87,0,0,0,422,475.19l2.38-.14c.79-.07,1.57-.23,2.36-.33l1.18-.16c.4-.07.77-.19,1.16-.28l2.32-.58a39.89,39.89,0,0,0,8.78-3.95A54.33,54.33,0,0,0,455,456a33.83,33.83,0,0,1-4.65,9.6,36.05,36.05,0,0,1-17.12,13.5,37.58,37.58,0,0,1-11.06,2.08A36.11,36.11,0,0,1,401,474.9,33.69,33.69,0,0,1,388,458Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M350,318a24,24,0,1,1-24,24,24,24,0,0,1,24-24m0-1a25,25,0,1,0,25,25,25,25,0,0,0-25-25Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M440.31,269.61a13.7,13.7,0,1,1-13.7,13.7,13.71,13.71,0,0,1,13.7-13.7m0-1A14.7,14.7,0,1,0,455,283.31a14.7,14.7,0,0,0-14.69-14.7Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M255.5,443A18.5,18.5,0,1,1,237,461.5,18.52,18.52,0,0,1,255.5,443m0-1A19.5,19.5,0,1,0,275,461.5,19.5,19.5,0,0,0,255.5,442Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M409.5,391A11.5,11.5,0,1,1,398,402.5,11.51,11.51,0,0,1,409.5,391m0-1A12.5,12.5,0,1,0,422,402.5,12.5,12.5,0,0,0,409.5,390Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M394,563a43,43,0,1,1-43,43,43,43,0,0,1,43-43m0-1a44,44,0,1,0,44,44,44,44,0,0,0-44-44Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M455,639a24,24,0,1,1-24,24,24,24,0,0,1,24-24m0-1a25,25,0,1,0,25,25,25,25,0,0,0-25-25Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M521.5,163A33.5,33.5,0,1,1,488,196.5,33.54,33.54,0,0,1,521.5,163m0-1A34.5,34.5,0,1,0,556,196.5,34.5,34.5,0,0,0,521.5,162Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M594.31,162.61a11.7,11.7,0,1,1-11.7,11.7,11.71,11.71,0,0,1,11.7-11.7m0-1A12.7,12.7,0,1,0,607,174.31a12.71,12.71,0,0,0-12.69-12.7Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M428.31,199.61a17.7,17.7,0,1,1-17.7,17.7,17.72,17.72,0,0,1,17.7-17.7m0-1A18.7,18.7,0,1,0,447,217.31a18.7,18.7,0,0,0-18.69-18.7Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M642.5,834a9.5,9.5,0,1,1-9.5,9.5,9.51,9.51,0,0,1,9.5-9.5m0-1A10.5,10.5,0,1,0,653,843.5,10.5,10.5,0,0,0,642.5,833Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M676.31,814.61a18.7,18.7,0,1,1-18.7,18.7,18.72,18.72,0,0,1,18.7-18.7m0-1A19.7,19.7,0,1,0,696,833.31a19.7,19.7,0,0,0-19.69-19.7Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M661.5,856A14.5,14.5,0,1,1,647,870.5,14.51,14.51,0,0,1,661.5,856m0-1A15.5,15.5,0,1,0,677,870.5,15.5,15.5,0,0,0,661.5,855Z" transform="translate(-178 -127)")
+                path(class="cls-4" d="M460.61,861.19,461,854a44,44,0,0,0-77.69-28.29" transform="translate(-178 -127)")
+                path(class="cls-4" d="M225,348.06a9.56,9.56,0,0,0,5.41,1.6" transform="translate(-178 -127)")
+                path(class="cls-4" d="M240,340a9.59,9.59,0,0,0-4.54-8.07" transform="translate(-178 -127)")
+                path(class="cls-4" d="M230.42,349.66A9.62,9.62,0,0,0,240,340" transform="translate(-178 -127)")
+                path(class="cls-3" d="M278.25,697.61a9.75,9.75,0,1,1-9.75,9.75,9.76,9.76,0,0,1,9.75-9.75m0-1A10.75,10.75,0,1,0,289,707.36a10.75,10.75,0,0,0-10.75-10.75Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M250.06,602a23.56,23.56,0,1,1-23.56,23.56A23.58,23.58,0,0,1,250.06,602m0-1a24.56,24.56,0,1,0,24.55,24.56A24.55,24.55,0,0,0,250.06,601Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M281.5,443a6.5,6.5,0,1,1-6.5,6.5,6.51,6.51,0,0,1,6.5-6.5m0-1a7.5,7.5,0,1,0,7.5,7.5,7.5,7.5,0,0,0-7.5-7.5Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M571.5,751a4.5,4.5,0,1,1-4.5,4.5,4.51,4.51,0,0,1,4.5-4.5m0-1a5.5,5.5,0,1,0,5.5,5.5,5.5,5.5,0,0,0-5.5-5.5Z" transform="translate(-178 -127)")
+                path(class="cls-3" d="M681.5,136a4.5,4.5,0,1,1-4.5,4.5,4.51,4.51,0,0,1,4.5-4.5m0-1a5.5,5.5,0,1,0,5.5,5.5,5.5,5.5,0,0,0-5.5-5.5Z" transform="translate(-178 -127)")
+            =emptyLines
+
+            - for (let i = 0; i < 7; i++)
+                svg(class="cloud cloud-middle" data-name="middle-cloud-element" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 525 174")
+                    title="cloud-element"
+                    path(class="cls-1" d="M689.5,518c-3.06,0-6.09.06-9.07.17-10.09-8.23-25.35-15.41-44.25-21A38.92,38.92,0,0,0,638,485.5c0-33.41-43.43-60.5-97-60.5-44,0-81.16,18.28-93,43.33A85.81,85.81,0,0,0,428,466c-28.94,0-53.59,14.1-63,33.85-6-.55-12.2-.85-18.54-.85-53.85,0-97.5,21-97.5,47s43.65,47,97.5,47c30,0,56.79-6.52,74.68-16.79C449.09,589.47,492.6,598,541.5,598c49.72,0,93.88-8.82,121.72-22.46A233.67,233.67,0,0,0,689.5,577c46.67,0,84.5-13.21,84.5-29.5S736.17,518,689.5,518Z" transform="translate(-249 -425)")
+                    path(style="fill: #c9c9c9" class="cls-2" d="M689.5,561a233.67,233.67,0,0,1-26.28-1.46C635.38,573.18,591.22,582,541.5,582c-48.9,0-92.41-8.53-120.32-21.79C403.29,570.48,376.48,577,346.5,577c-47.83,0-87.61-16.6-95.91-38.5A24,24,0,0,0,249,547c0,26,43.65,47,97.5,47,30,0,56.79-6.52,74.68-16.79C449.09,590.47,492.6,599,541.5,599c49.72,0,93.88-8.82,121.72-22.46A233.67,233.67,0,0,0,689.5,578c46.67,0,84.5-13.21,84.5-29.5a13.06,13.06,0,0,0-3.57-8.51C760,552.14,727.71,561,689.5,561Z" transform="translate(-249 -425)")
+
+        =emptyLines
+        section.audio-section
+            audio(class="audio-element" src="assets/sound/dark-life-note_going-down.mp3")

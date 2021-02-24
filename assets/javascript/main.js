@@ -28,6 +28,7 @@ function toggleClass(element, className, force = null) {
 document.addEventListener("DOMContentLoaded", () => {
     let stars = document.getElementsByClassName("star");
     let moon = document.querySelector(".moon");
+    let clouds = document.getElementsByClassName("cloud");
 
     let windowWidth = window.innerWidth;
     let windowHeight = window.innerHeight;
@@ -41,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let backgroundBottomGradientColor = ( localStorage.getItem("backgroundBottomGradientColor") !== null )
         ? localStorage.getItem("backgroundBottomGradientColor")
         : "#102675";
-
 
 
     /*set positions of the stars*/
@@ -77,6 +77,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }, 2000)
 
+
+    /*set the clouds position*/
+    for ( let item of clouds ) {
+        item.style.left = rand( ( windowWidth + item.width.baseVal.value ) * 0.5 + ( windowWidth + item.width.baseVal.value ), windowWidth + item.width.baseVal.value ) + 'px';
+        item.style.top = (rand(windowHeight - item.height.baseVal.value, item.height.baseVal.value )  )+ 'px';
+        item.style.margin = rand(item.width.baseVal.value, 0) + 'px';
+    }
+
+
+    setInterval( () => {
+        for ( let item of clouds ) {
+            if (parseInt(item.style.left, 10) < -( item.width.baseVal.value ) ) {
+                item.style.left = rand( ( windowWidth + item.width.baseVal.value ) * 0.5 + ( windowWidth + item.width.baseVal.value ), windowWidth + item.width.baseVal.value ) + 'px';
+            }
+            item.style.left = ( parseInt(item.style.left, 10) - 1 ) + 'px';
+        }
+    }, 10)
 
     /* audio segment*/
     let audio = document.querySelector(".audio-element");

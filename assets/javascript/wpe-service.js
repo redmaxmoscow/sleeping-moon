@@ -6,11 +6,6 @@ function makeRGBFromWPEFormat( color ) {
     })
 }
 
-let backgroundBottomGradientColor = "#102675";
-let backgroundTopGradientColor = "#978aff";
-let starBlinkSpeed = 300;
-
-
 window.wallpaperPropertyListener = {
     applyUserProperties: function(properties) {
         if (properties.backgroundbottomgradientcolor) {
