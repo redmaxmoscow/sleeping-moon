@@ -43,6 +43,18 @@ document.addEventListener("DOMContentLoaded", () => {
         ? localStorage.getItem("backgroundBottomGradientColor")
         : "#102675";
 
+    for (let item of stars) {
+        item.style.fill = `#cdcc00`;
+    }
+
+    document.querySelector(".moon").style.fill = `#7dcfc9`;
+    document.querySelector(".cls-2").style.fill = `#299496`;
+    let insideHoles = document.getElementsByClassName("cls-3");
+
+    for (let item of insideHoles) {
+        item.style.fill = `#51a09a`;
+        item.style.stroke = `#51a09a`;
+    }
 
     /*set positions of the stars*/
     for ( let item of stars ) {
